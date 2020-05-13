@@ -11,10 +11,12 @@ public class CharacterManager : MonoBehaviour
     public float gravity = -9.81f;
 
     public CharacterController playerControl;
+    public bool isInactive = false;
 
     void Update()
     {
-        Movement();
+        if (!isInactive)
+            Movement();
     }
 
     void Movement()

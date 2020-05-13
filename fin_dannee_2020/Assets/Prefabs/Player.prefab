@@ -104,13 +104,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorClass:
-    doorPickupRange: 2
-    doorMaxDistanceGrab: 3
-    doorDistance: 2
+    doorPickupRange: 4
+    doorMaxDistanceGrab: 5
+    doorDistance: 3
   itemClass:
-    itemPickupRange: 3
-    itemMaxDistanceGrab: 4
-    itemDistance: 2
+    itemPickupRange: 6
+    itemMaxDistanceGrab: 5
+    itemDistance: 3
 --- !u!81 &491519693172814143
 AudioListener:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 491519694633760959}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec1e09e4059f2640ab6077e71b719da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 15
   gravity: -9.81
   playerControl: {fileID: 491519694633760896}
+  isInactive: 0
